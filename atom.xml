@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://1inn.vercel.app</id>
+    <title>途读</title>
+    <updated>2021-08-21T13:28:40.132Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://1inn.vercel.app"/>
+    <link rel="self" href="https://1inn.vercel.app/atom.xml"/>
+    <subtitle>我的小站</subtitle>
+    <logo>https://1inn.vercel.app/images/avatar.png</logo>
+    <icon>https://1inn.vercel.app/favicon.ico</icon>
+    <rights>All rights reserved 2021, 途读</rights>
+    <entry>
+        <title type="html"><![CDATA[如何更舒适使用商家已跑路的口袋阅？]]></title>
+        <id>https://1inn.vercel.app/post/ru-he-geng-shu-gua-shi-yong-shang-jia-yi-pao-lu-de-kou-dai-yue/</id>
+        <link href="https://1inn.vercel.app/post/ru-he-geng-shu-gua-shi-yong-shang-jia-yi-pao-lu-de-kou-dai-yue/">
+        </link>
+        <updated>2021-08-17T06:37:26.000Z</updated>
+        <content type="html"><![CDATA[<p>本文不教小白，只是给动手能力强的人一个思路。虽然口袋阅商家已经跑路，店铺早已关门，但设备还是能继续用的。</p>
+<h1 id="使用微信读书">使用微信读书</h1>
+<ul>
+<li>下载和安装<br>
+微信读书有<a href="https://ink.qq.com/">墨水屏版</a>，针对<a href="https://www.zhihu.com/question/327617400/answer/1471943597">墨水屏做优化</a>，官网写的很详细。目前还是能直接从口袋阅内部点图标下载的（虽然口袋阅内置商店已经歇了）<br>
+如果这个办法已经歇了，那就下载安装包后口袋阅连着电脑用 ADB 安装吧，或者小白用<a href="https://jamcz.com/gj2x.html">搞机工具箱</a>，也有教程。</li>
+<li>组队无限卡<br>
+微信读书手机端里答题、分享、被好友点赞联名卡，都会赠送无限卡天。每天还可以翻牌子，翻到免费领，也有分享免费领活动，每天哪个端看了多少分钟都会有统计，签到加上每天阅读时间可以在手机 app 里领无限读天数<br>
+抽无限卡组队的话可以用这个<a href="https://weread.qnmlgb.tech/">工具</a></li>
+<li>上传本地书籍<br>
+手机 app 和网页版都可以上传，注意文件名不能有下划线。<br>
+<img src="https://i.loli.net/2021/08/17/4CDWw5ZdpyuQexz.png" alt="image.png" loading="lazy"></li>
+</ul>
+<h1 id="转移-kindle-书籍">转移 Kindle 书籍</h1>
+<ul>
+<li>从网页下载</li>
+</ul>
+<ol>
+<li>登录亚马逊官网，进入管理我的内容和设备&gt;<a href="https://www.amazon.cn/hz/mycd/myx#/home/content/booksAll/dateDsc/">内容</a></li>
+<li>点击每本书前面的  <strong>···</strong>，“通过电脑下载USB传输”，一本一本的下成 azw3 格式</li>
+</ol>
+<ul>
+<li>从设备转移<br>
+在你的 Kindle 上一个个把想要的电子书下好，要 azw3 格式的，怎么做去问搜索引擎</li>
+<li>安装 Calibre（官网） 和 DeDRM tools （Github）<br>
+都是明白人，知道怎么做，注意了：
+<blockquote>
+<p>Users with calibre 5.x or later should use release 7.2.0 or later of the tools. Users with calibe 4.x or earlier should use release 6.8.x of the tools.</p>
+</blockquote>
+</li>
+<li>进行 DeDRM 操作<br>
+把下好且已经装上 DeDRM tools 插件、配置好 kindle 序列号的 Calibre 打开，有 DRM 的书籍直接拖进去，要是还打不开就转换一下格式。再打不开，脱 DRM 工具的官方压缩包有 Readme，看 Troubleshooting 就行了。完成后直接传到微信读书里看吧，除了自带的阅读器外，微信读书墨水屏版在口袋阅上体验很好。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Epicgames 第三方客户端 Legendary 安装教程]]></title>
+        <id>https://1inn.vercel.app/post/epicgames-di-san-fang-ke-hu-duan-legendary-an-zhuang-jiao-cheng/</id>
+        <link href="https://1inn.vercel.app/post/epicgames-di-san-fang-ke-hu-duan-legendary-an-zhuang-jiao-cheng/">
+        </link>
+        <updated>2021-07-28T02:33:47.000Z</updated>
+        <summary type="html"><![CDATA[<ul>
+<li>Electron 写成的 Epic Games Launcher 账号登陆状态日常掉？</li>
+<li>日常登录时由 launchdarkly 供应的人机验证服务连不上？</li>
+<li>点击毫无交互反馈的运行后鬼知道进程何时会运行，亦或身份校验尚在艰难进行中(也难以判断)。多点一下？又畏惧跑起两个全屏来，切换时总要默对逃不过的黑屏几秒和暴躁风扇轰鸣，耳目宣示给脑子的只有”怎么又犯？”</li>
+<li>关掉无用的 Launcher，何曾想游戏居然也一并关闭。Just Game，有错吗？</li>
+<li>下载速度总是无端波动，甚至在你睡梦时默默归零，坐待隔日你睡眼朦胧的傻脸？<br>
+—— 小众软件论坛 @meta同学</li>
+</ul>
+]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Electron 写成的 Epic Games Launcher 账号登陆状态日常掉？</li>
+<li>日常登录时由 launchdarkly 供应的人机验证服务连不上？</li>
+<li>点击毫无交互反馈的运行后鬼知道进程何时会运行，亦或身份校验尚在艰难进行中(也难以判断)。多点一下？又畏惧跑起两个全屏来，切换时总要默对逃不过的黑屏几秒和暴躁风扇轰鸣，耳目宣示给脑子的只有”怎么又犯？”</li>
+<li>关掉无用的 Launcher，何曾想游戏居然也一并关闭。Just Game，有错吗？</li>
+<li>下载速度总是无端波动，甚至在你睡梦时默默归零，坐待隔日你睡眼朦胧的傻脸？<br>
+—— 小众软件论坛 @meta同学</li>
+</ul>
+<!-- more -->
+<p>关于 Legendary 的功能介绍<a href="https://www.appinn.com/legendary/">小众软件</a>已经很详细了，所以可以先去看看简介，下载后再看这篇文章。</p>
+<h2 id="安装登录">安装&amp;登录</h2>
+<p>去看小众软件的文章</p>
+<h2 id="启动已导入的游戏">启动已导入的游戏</h2>
+<p>去看小众软件的文章把已经下载下来的游戏导入客户端，顺带一提，安装游戏和启动游戏的 <code>[App name]</code>，不是前面的那个，比如你在 Powershell 里这样操作:</p>
+<pre><code>E:\Epic&gt; .\legendary.exe list-games
+[cli] INFO: Logging in...
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Getting game list... (this may take a while)
+[Core] INFO: Updating meta for 18fafa2d70d64831ab500a9d65ba9ab8 due to build version mismatch
+...
+
+Available games:
+* NBA 2K21 (App name: 639977eecfd2497c941b71af949b5067 | Version: 1.12.253557)
+ 
+</code></pre>
+<p>所以你要启动 NBA 2k21 不是<code>./lengedary launch NBA 2k21</code>，而是后面的那么一大串<code>./lengedary launch 639977eecfd2497c941b71af949b5067</code></p>
+<h2 id="安装新游戏">安装新游戏</h2>
+<p>Legendary 默认是安装到 C盘的，所以我们要设置好默认配置，打开 <code>C:/User（或者中文“用户”）/.config/legendary/config.ini</code> 里面默认是空的，在里面粘贴以下内容并按照自己需求修改（我想你既然选择安装第三方客户端肯定看得懂英语）：</p>
+<pre><code class="language-ini">[Legendary]
+log_level = debug
+; maximum shared memory (in MiB) to use for installation
+max_memory = 1024
+; maximum number of worker processes when downloading (fewer workers will be slower, but also use fewer system resources)
+max_workers = 8
+; default install directory
+install_dir = E:/Epic/
+; whether or not syncing with egl is enabled
+egl_sync = true
+</code></pre>
+<p>详细配置文件在<a href="https://github.com/derrod/legendary#config-file">这里</a></p>
+<h2 id="云存档同步">云存档同步</h2>
+<p>如果你是没下官方客户端只下了 Legendary ，你得看看他们的<a href="https://github.com/derrod/legendary#quickstart">说明</a>（从 Quikstart 到 Usage），关于云存档的同步好像还不一样，好几个命令<code>download-saves|sync-saves|egl-sync</code>。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中国李华]]></title>
+        <id>https://1inn.vercel.app/post/zhong-guo-li-hua/</id>
+        <link href="https://1inn.vercel.app/post/zhong-guo-li-hua/">
+        </link>
+        <updated>2021-05-08T11:36:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>记一次定制衣物。效果见封面</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>记一次定制衣物。效果见封面</p>
+<!-- more -->
+<p>想买新衣服，又想穿一件与众不同的，所以模仿了“中國李寧”这个非常标志性的繁体红色大方框。然后一直都有想恶搞一个英语作文里李华的，所以嘛就开搞了。<br>
+首先就是找一张李宁 logo 的图片去识别一下字体，有各种字体识别网站，识别出是“汉仪超粗宋简”，下载，用在 GIMP 上（开源图片编辑软件，办公电脑不想下大而且配装要求高的 Ps），参看原 logo 字之间的行间距与字间距，调整一下，然后导出为 PSD 方便定制为 T恤。就这么简单。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[故乡并不遥远，乡音带你回家]]></title>
+        <id>https://1inn.vercel.app/post/gu-xiang-bing-bu-yao-yuan-xiang-yin-dai-ni-hui-jia/</id>
+        <link href="https://1inn.vercel.app/post/gu-xiang-bing-bu-yao-yuan-xiang-yin-dai-ni-hui-jia/">
+        </link>
+        <updated>2021-05-07T13:01:55.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>&quot;I left home when a mere stripling,and returned in old age.While my native accents still remained,my ear-lock had  grown thin&quot;</p>
+</blockquote>
+<p>题文无关，写上来是因为随便在本书上写的，这一页正好拿来做标题。</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>&quot;I left home when a mere stripling,and returned in old age.While my native accents still remained,my ear-lock had  grown thin&quot;</p>
+</blockquote>
+<p>题文无关，写上来是因为随便在本书上写的，这一页正好拿来做标题。</p>
+<!-- more -->
+<p>最近沉迷全境封锁，但也基本冷却下来了。所以可能会看看书做做书摘什么的，放在博客上。不是文科专业没有什么语文相关的课程，于是感到自己目前的文化水平降低了不少，写文章的灵感啊动力啊都快没了还总是提笔忘字，词穷。</p>
+<p>说句题外话 写到这里我就想现代博客和微信公众号的对比了，一般来说文章不需要大量配图的。传统杂志如《读者》这种一篇短文最多一张配图现在微信文章一段话配一张图，扯远了，这样说起来我起码有半年没阅读了，纸质书没看过一两本，细思极恐啊，哪怕高中学习再忙都会看看读者校园版和《作文素材》</p>
+<p>再就是，原先的域名强制重定向到 Vercel.app 了，再加上本来就不想再折腾域名购买，更新友链，国内备案，真是头疼。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Excel 表格相关问题与全境封锁机密套装统计]]></title>
+        <id>https://1inn.vercel.app/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/</id>
+        <link href="https://1inn.vercel.app/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/">
+        </link>
+        <updated>2021-03-14T06:03:09.000Z</updated>
+        <summary type="html"><![CDATA[<p>眼花缭乱预警，关于什么是全境1，请谷歌或哔哩哔哩搜索。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>眼花缭乱预警，关于什么是全境1，请谷歌或哔哩哔哩搜索。</p>
+<!-- more -->
+<p>这是我做给群里萌新看的<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，本文不谈论游戏内容，只有关于 excel 表格知识。<br>
+Markdown 表格的确不适合做表格统计，太复杂就会变成下面这样：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>面具</th>
+<th>背心</th>
+<th>背包</th>
+<th>护膝</th>
+<th>枪套</th>
+<th>手套</th>
+<th>是否洗好</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>掠夺</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>D3</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>是</td>
+</tr>
+<tr>
+<td>谋略</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>是</td>
+</tr>
+<tr>
+<td>女妖</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>火冠</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>阿尔法</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>略</p>
+<p>满屏幕的“有”，看不清楚，统计了个寂寞。但是在 excel 表格里就显得非常完美。<strong>开始 &gt; 条件格式 &gt;新建规则</strong>，当单元格值为“有”时，单元格变成绿色，然后设置范围。再加个复选框“有/无”就可以有这种效果了。如图：</p>
+<p><img src="https://i.loli.net/2021/03/14/mQOtrHFWnejNUB2.png" alt="image.png" loading="lazy"><br>
+而统计装备数量呢，还可以添加柱形图，有一个直观的数量相对多少显示，方法还是<strong>开始 &gt; 条件格式 &gt;新建规则 &gt; 数据条 &gt; 填充</strong>，输入数字后会有相对数量的一个数据条显示，如图：<br>
+<img src="https://i.loli.net/2021/03/14/XP7c3W4DSoQ6ypV.png" alt="image.png" loading="lazy"><br>
+文章就到这里，具体还有一些有用的网站：</p>
+<ul>
+<li><a href="https://tableconvert.com/">表格转换网站</a>，很全，包括各种文件格式的一般表格转换</li>
+<li><a href="https://web.baimiaoapp.com/image-to-excel">图片转表格</a>，白描的图片转表格服务，类似免费的还有电脑版QQ（TIM）自带的图片转表格功能</li>
+</ul>
+<p>另外，我的网站底部更新了一个链接。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>虽然很少有人看就是了。原因嘛，好多伸手党，不看群文件，有些问题指着教程硬问，提醒多次都不看的全都有，所以我发现轻小说群群友素质还是比游戏开黑群素质高到不知道哪里去了，我天天看到游戏群里萌新问问题都得高血压，哪里是萌新，明明是爷新，要别人饭喂到嘴里，有时候都喂到嘴里了还不用大脑思考。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小便条：关于网站提速那些事以及其他无关]]></title>
+        <id>https://1inn.vercel.app/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/</id>
+        <link href="https://1inn.vercel.app/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/">
+        </link>
+        <updated>2021-02-03T13:23:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>因为绞尽脑汁感觉已经没有什么可以写的了，所以只好列一些清单来给想提速的人一点启发，所以看起来肯定不像教程文章。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因为绞尽脑汁感觉已经没有什么可以写的了，所以只好列一些清单来给想提速的人一点启发，所以看起来肯定不像教程文章。</p>
+<!-- more -->
+<h2 id="浏览器控制台">浏览器控制台</h2>
+<p>f12 打开你的控制台，然后看我的截图。浏览器控制台是最好的测速方式，当然测试结果也只符合你个人或你所在地区。不管怎么说，测试过程中也可以发现一些问题（通病）。<br>
+<img src="https://img.imgdb.cn/item/601ab2673ffa7d37b3097faf.jpg" alt="" loading="lazy"><br>
+<img src="https://img.imgdb.cn/item/601ab26b3ffa7d37b3098137.jpg" alt="" loading="lazy"></p>
+<h2 id="lighthouse">Lighthouse</h2>
+<p>是一个自动化网络审查工具，功能挺全，在开发者工具浏览器控制台里，也有<a href="https://developers.google.com/web/tools/lighthouse/">网页版</a>，以及<a href="https://developers.google.com/speed/pagespeed/insights/?hl=zh-cn">另一个类似的</a>（两个都需要科学上网）。基本上生成一个很详细的报告后，你就可以照着清单去改进了，我这里的截图以 Edge 浏览器控制台的 Lighthouse 为例。<br>
+比如，生成报告后，我们点击“查看原始跟踪”<br>
+<img src="https://img.imgdb.cn/item/601ab2753ffa7d37b30985b0.png" alt="" loading="lazy"><br>
+这样就可以看到中间那一行的网站快照，可以预估出访客访问你网站时等待一点五秒后有了画面，这一点很重要，不管网站有没有加载完，相信你也没有耐心看着空白好几秒的屏幕。<br>
+<img src="https://img.imgdb.cn/item/601ab2783ffa7d37b30986db.png" alt="" loading="lazy"></p>
+<h2 id="其他链接">其他链接</h2>
+<ul>
+<li><a href="https://www.vectorizer.io/">vectorizer</a>——图片矢量化</li>
+<li><a href="https://github.com/JohnsenZhou/Front-End-Checklist">前端开发清单</a>——是一份在站点/HTML页面发布到生产环境之前需要测试的所有元素的详尽列表。</li>
+</ul>
+<h2 id="其他无关">其他无关</h2>
+<p>我的小纸条地址是<a href="https://1inn.vercel.app/box.html">https://1inn.vercel.app/box.html</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[头像、昵称与标志的更换历史]]></title>
+        <id>https://1inn.vercel.app/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/</id>
+        <link href="https://1inn.vercel.app/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/">
+        </link>
+        <updated>2021-01-11T05:43:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>很久很久之前，我都不知道自己会在博客路上走这么远。<br>
+就简单谈一下博客/头像的历史与寓意</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>很久很久之前，我都不知道自己会在博客路上走这么远。<br>
+就简单谈一下博客/头像的历史与寓意</p>
+<!-- more -->
+<h2 id="第一张头像">第一张头像</h2>
+<p>起初正式拥有独立博客时（二零一六年）我使用的是 Wordpress 注册了官方账号，为了使用 Gravatar，上传了一个头像——一个 <strong>@海猫络合物</strong> 画的人物截图，加上“爱写”两个字，寓意坚持写博客。而 <strong>@海猫络合物</strong> 在当时只是一个原画画师，还没有自己合作出明日方舟这样的爆款手游，不过有趣的是，当时 ta 微博上画的一些草稿与原型基本符合了日后明日方舟干员的形象与设定，而我截取的这一张头像刚好是贴近 ta 日后创立的明日方舟的设定图。<br>
+<img src="https://sdn.geekzu.org/avatar/d320054ed87a28ef5d852f33836b0f99" alt="原版头像" loading="lazy"><br>
+在那之后很长一段时间，大概四年多，我都没有专门再弄一个头像来放在博客里，直到我最后一次使用 Windows 7，在从来不用的数位板上画出来这样一个头像。很长一段时间我甚至在社交软件里都使用它，即使不是很漂亮，但有个性就足够了。<br>
+<img src="https://cdn.jsdelivr.net/gh/dyxang/cdn/logo.png" alt="二代头像" loading="lazy"><br>
+现在，我决定在之后的社交网络注册中，坚持使用途读博客的头像，提高辨识度。这头像比较极简，长这样：<br>
+<img src="https://cdn.jsdelivr.net/gh/dyxang/cdn/logo.jpg" alt="三代头像" loading="lazy"><br>
+其实我在社交软件上的头像基本都很极简并辨识度很高，以至于在某些社群里失踪半年再回来还有人认得我……另外我现在刚注册了一个新的<a href="https://o3o.ca/@Dyxang">长毛象账号</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，欢迎关注~老账号几年前注册的一直没用，就忘了🌚。</p>
+<h2 id="网站图标来由">网站图标来由</h2>
+<p>第一个网站图标已经消失在互联网中了，是一个简单的 D 字母与各种寓意的拼接，其实并算不上真正意义上的网站图标，真正意义上我自己设计的网站图标一直沿用至今，没错，就是这个：<br>
+<img src="https://cdn.jsdelivr.net/gh/dyxang/dyxang/favicon.ico" alt="网站图标" loading="lazy"><br>
+不出意外的话我不会再更改了，类似变身器（大雾）的图形其实是字母“Y”，也是我姓名中的缩写，而白色方块则代表着字母“D”也就是我昵称的首字母，然后整体呈火炬状。制作它的起因就是在 Farbox 至 Bitcron 时期（参见 关于我 &gt; 时间轴），如果你没有自己的网站图标的话，默认显示的是服务商的官方图标，这一点很恼火，所以我就自制了一个图标。</p>
+<h2 id="昵称">昵称</h2>
+<p>起初我的博客叫 <strong>③d's blog</strong>，原因嘛，就是之前的昵称连续带三个“d”，多说几句，那个时候因为是博客独立域名，活着的友链还蛮多，甚至莫名其妙被一个独立博客收录站给收录过😂<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>。<br>
+之后，我注册了 Github 账号，结合名字创立了“<strong>Dyxang</strong>”这个英文名，我的读法是“迪祥”，但是英语正确读法是“迪克斯昂”。至于途读，也是一直说的 to do &gt; 2do &gt; 途读，看我以前的域名就知道了。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>关于长毛象的介绍，参见<a href="https://docs.o3o.ca/">《什么是长毛象？》</a>文档 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>让人无语的是，我的博客独立域名末期，我使用的 Typecho 博客主题的博主（早已互加友链）把自己的博客主题改为收费后就把我的友链直接删除，哪怕我把收费版本之前的那套博客主题换掉再重新加他友链他还是不理我，我想不至于我仅仅是使用收费前的主题版本让他不想让别人知道吧，而且有话好好说嘛，人心难料啊。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[改造“B 言 B 语”并直接移植到网页端]]></title>
+        <id>https://1inn.vercel.app/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/</id>
+        <link href="https://1inn.vercel.app/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/">
+        </link>
+        <updated>2021-01-09T09:34:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>这是一个毫无技术含量的移植（= =）<br>
+背景请看这篇<a href="https://sspai.com/post/60024?utm=qndydtracker">保卫表达：用后端 BaaS 快速搭建专属无点赞评论版微博——b言b语</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这是一个毫无技术含量的移植（= =）<br>
+背景请看这篇<a href="https://sspai.com/post/60024?utm=qndydtracker">保卫表达：用后端 BaaS 快速搭建专属无点赞评论版微博——b言b语</a></p>
+<!-- more -->
+<p>去年六月份就想弄了，一直拖到现在，其实很简单，就是让 Waline 与 b言b语共用同一个云存储。以发评论的形式来发“说说”，之前官方有 Tasker（需要手机 root）、微信、Quiker 、Termux、uTools等等版本，但是网页版才是真正的跨平台！</p>
+<ol>
+<li>安装 <a href="https://waline.js.org">Waline</a></li>
+<li>去下载<a href="https://github.com/daibor/nonsense.fun">b言b语</a></li>
+<li>把所有<code>i.attributes.content</code>改成<code>i.attributes.comment</code>，再把<code>AV.Query('content')</code>改成<code>AV.Query('Comment')</code>，不需要在 LeanCloud 后台新建什么，其他照官方方法来</li>
+<li>完成，此后你只需要点开收藏的 Waline 评论网址，然后评论，即是发了一条“说说”</li>
+</ol>
+<p>让它有发图片功能的话就把</p>
+<pre><code class="language-js">    function urlToLink(str) {
+        var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&amp;:/~+#]*[\w-\@?^=%&amp;/~+#])?/g;;
+
+        str = str.replace(re, function(website) {
+            return &quot;&lt;a href='&quot; + website + &quot;' target='_blank'&gt; &lt;i class='iconfont icon-lianjie-copy'&gt;&lt;/i&gt;链接 &lt;/a&gt;&quot;;
+        });
+        return str;
+    }
+</code></pre>
+<p>替换成</p>
+<pre><code class="language-js">    function urlToLink(str) {
+        var re = /\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
+        var re_forpic = /\bhttps?:\/\/.*?(\.gif|\.jpeg|\.png|\.jpg|\.bmp|\.webp)/g;
+        str = str.replace(re, function (website) {
+            return &quot;&lt;a href='&quot; + website +
+                &quot;' target='_blank'&gt; #链接 &lt;/a&gt;&quot;;
+        });
+        str = str.replace(re_forpic, function (imgurl) {
+            return &quot;&lt;img src='&quot; + imgurl + &quot;'  /&gt; &quot;;
+        });
+        return str;
+    }
+</code></pre>
+<p>就行了，评论纯文本链接会转为可点击链接，纯文本的图片链接会转为显示的图片。</p>
+<blockquote>
+<p>实际上，还有显示在博客首页 banner 当公告栏的玩法，以及适配博客样式变为博客单页面的一部分，还有“说说”每一条显示发布平台的玩法，但没试过。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我为什么使用 TiddlyWiki]]></title>
+        <id>https://1inn.vercel.app/post/wo-wei-shi-me-shi-yong-tiddlywiki/</id>
+        <link href="https://1inn.vercel.app/post/wo-wei-shi-me-shi-yong-tiddlywiki/">
+        </link>
+        <updated>2021-01-01T06:09:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>TiddlyWiki[^1]，内容翻译很全，几乎照搬官方网站] 作为我曾经浏览过的收集知识的工具（不像很多人把它当作学习笔记，比如 RoamResearch[<sup>2]）。并不能称为我的知识管理系统。老实说我所做的事没有那么高级，所以不会在文章提及一些高级技巧（如卡片盒笔记法[</sup>3]），在这篇文章里我只写一件事情——关于我选择 TiddlyWiki 以及收集知识这一块的思考。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>TiddlyWiki<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，内容翻译很全，几乎照搬官方网站] 作为我曾经浏览过的收集知识的工具（不像很多人把它当作学习笔记，比如 RoamResearch<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>）。并不能称为我的知识管理系统。老实说我所做的事没有那么高级，所以不会在文章提及一些高级技巧（如卡片盒笔记法<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>），在这篇文章里我只写一件事情——关于我选择 TiddlyWiki 以及收集知识这一块的思考。</p>
+<!-- more -->
+<p>TiddlyWiki 之所以坚持这么久，其中重要原因肯定有社区模式的加持，在社区模式维护下的这开源项目一直呈现着旺盛的生命力，如瑞士军刀般功能强大且拥有着丰富的插件及扩展性。正好符合我的需求，我也不用担心它的发展或现有功能满足不了我了，知名度在国内也不用说。连<s>什么火就搬什么的</s>哔哩哔哩都出现了它的身影，不过我始终不明白，明明前几年就有人提到（最早可追溯到 2007 年），而且语言早就有中文，为什么到近几年才在国内慢慢火起来。<br>
+我想其中的根本原因是国内有关它的中文教程很少，正因为 TiddlyWiki 的复杂，所以很难写全攻略。<br>
+关于如何使用 TiddlyiWiki，我也不会再重复别人的话了。我就简单描述一下我的需求，我以前在互联网上找信息时往往是找到后要么就保存到收藏夹，要么看一眼就没了，所以再去找时我就得：</p>
+<ul>
+<li>点开收藏夹，然后一个个看哪个是我需要的</li>
+<li>完全不记得，只好查找历史记录或重新搜索</li>
+</ul>
+<p>看，多么不必要的过程，如果一开始就整理好的话就不会浪费时间了。<br>
+而在现有条件下，我完全可以搭建一个知识收集系统——与一般的素材收集插件/软件不同，我的目标是一个可检索的“剪贴报”，所以我选择了 TiddlyWiki。<br>
+在我的印象里，TiddlyWiki 最适合不过做这种事了。第一，免费、开源，本地化极好，对我来说这些是必须的；第二，离线使用，全平台，本身是一个 html 文件，自己就是一个客户端，有浏览器就能看；第三，能力强，管理知识很适合，健康的发展模式不会担心它暴毙，生命力就像是 Wordpress 一样。<br>
+于是，我终于开始了系统的知识整理，把知识变成自己的，大致是这样一个过程</p>
+<ol>
+<li>搜集<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>信息</li>
+<li>整理信息，剔除无用内容</li>
+<li>分类信息，打上标签</li>
+</ol>
+<p>这样再去检索时就有了更高的效率，自己整理的又便于自己理解，很方便。</p>
+<blockquote>
+<p>本来我写了一千多字稿子想修改时发现没了……只剩一张了……所以只好重写，内容也精简很多</p>
+</blockquote>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>若想了解，推荐繁体中文网站 <a href="http://tw5-zh.tiddlyspot.com/">TiddlyWiki 舞</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>想用但没有钱来购买 RoamResearch，可以看一下 Tiddlywiki 的变种 <a href="https://tiddlyroam.org/">tiddlyroam</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a href="https://sspai.com/post/60466">How to take smart notes，方法及工具</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>词典辨析：“搜集”指到处寻找并聚集在一起（不易得到的东西）。“收集”指使聚集在一块。 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[因安全问题评论系统迁移至 Waline]]></title>
+        <id>https://1inn.vercel.app/post/an-quan-wen-ti-ping-lun-xi-tong-qian-yi-zhi-waline/</id>
+        <link href="https://1inn.vercel.app/post/an-quan-wen-ti-ping-lun-xi-tong-qian-yi-zhi-waline/">
+        </link>
+        <updated>2020-12-17T04:43:24.000Z</updated>
+        <summary type="html"><![CDATA[<p>没错，只多一个<code>V</code>的评论系统 Waline，你会发现除了评论框下的 V 变成了 W，以及版本号变了外，其他几乎没变，当然，除了更加安全</p>
+<blockquote>
+<p>双倍 V，更加安全</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p>没错，只多一个<code>V</code>的评论系统 Waline，你会发现除了评论框下的 V 变成了 W，以及版本号变了外，其他几乎没变，当然，除了更加安全</p>
+<blockquote>
+<p>双倍 V，更加安全</p>
+</blockquote>
+<!-- more -->
+<p>我是一直都不知道 valine 有根本上的安全问题的，直到我看到 waline ，一款从 Valine 衍生的带后端评论系统 。他在<a href="https://waline.js.org/why">这个页面</a>里列出了 Valine 的几个问题</p>
+<ul>
+<li>XSS 安全</li>
+<li>隐私泄露</li>
+<li>阅读统计篡改</li>
+</ul>
+<p>附带一篇文章，<a href="https://ttys3.net/post/hugo/please-stop-using-valine-js-comment-system-until-it-fixed-the-privacy-leaking-problem/">《请马上停止使用Valine.js评论系统，除非它修复了用户隐私泄露问题》</a>。我仔细阅读了文章，由此决定立即迁移。按照 Waline 文档的 <strong>Valine 迁移指南</strong> 部分迁移成功，同时再按照 <code>配置&gt;服务端&gt;评论通知</code> 在 Vercel 增加了相关变量，至此迁移成功！<br>
+同时更改发件邮箱，看能不能避免被纳入垃圾邮件的问题，这个项目也是刚刚启动中，所以评论后是全局刷新，后续应该会有 ajax</p>
+]]></content>
+    </entry>
+</feed>
