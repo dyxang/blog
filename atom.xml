@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://1inn.vercel.app</id>
+    <id>https://www.1inn.top</id>
     <title>途读</title>
-    <updated>2021-08-21T15:47:31.547Z</updated>
+    <updated>2021-08-25T14:13:04.514Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://1inn.vercel.app"/>
-    <link rel="self" href="https://1inn.vercel.app/atom.xml"/>
+    <link rel="alternate" href="https://www.1inn.top"/>
+    <link rel="self" href="https://www.1inn.top/atom.xml"/>
     <subtitle>我的小站</subtitle>
-    <logo>https://1inn.vercel.app/images/avatar.png</logo>
-    <icon>https://1inn.vercel.app/favicon.ico</icon>
+    <logo>https://www.1inn.top/images/avatar.png</logo>
+    <icon>https://www.1inn.top/favicon.ico</icon>
     <rights>All rights reserved 2021, 途读</rights>
     <entry>
+        <title type="html"><![CDATA[时隔四年，重新使用二级域名]]></title>
+        <id>https://www.1inn.top/post/shi-ge-si-nian-chong-xin-shi-yong-er-ji-yu-ming/</id>
+        <link href="https://www.1inn.top/post/shi-ge-si-nian-chong-xin-shi-yong-er-ji-yu-ming/">
+        </link>
+        <updated>2021-08-25T13:28:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>大事件！🎉🎉🎉，讲一下事情过程吧。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>大事件！🎉🎉🎉，讲一下事情过程吧。</p>
+<!-- more -->
+<p>可能是我突然对游戏冷却的缘故（头一次玩了长达半年的游戏），我这个人不是很长玩游戏的，这突然陷进去非常罕见，所以我就不知道该干啥，最重要的是，我觉得我已经好久没有读书了。专业不相关，语文压根不用学，历史也是副课，将近一年没有阅读，没有培养自己的人文素养，很多次很多字都不认识了，于是乎这几天我的注意力就转移到阅读和写作上面。<br>
+原因就是这么的简单，今天碰巧看到一篇普通人买服务器的文章，激起了我的热情，可是浏览众多服务器价格，发现都高于我的期待值。尽管自己已经很久没有折腾项目了，当时拿着树莓派很起劲，不过现在我基本上已经不喜欢折腾，买个服务器有点浪费。于是顺理成章地，我选择重新购买域名。<br>
+这一次我使用 Namesilo 注册域名，依旧是 Vercel 托管不变，Gridea 用来写作。注意，由于之前 Vercel 的 ip 被中国 ban 过，所以绑定域名照着<a href="https://www.vercel-status.com/incidents/r758bhbklgfd">官方解决</a>方法来做吧（不过里面的更改 A 记录好像现在已经取消了，所以只需要把 CNAME 改了就是）。<br>
+这件事给我的直接动力就是，可以更痛快地换友链了！🎊</p>
+<blockquote>
+<p>接下来可能要做的事就是，更换一下博客系统，因为 Gridea 已经好久没更新了，报告问题的 issue 也积压一堆</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[如何更舒适使用商家已跑路的口袋阅？]]></title>
-        <id>https://1inn.vercel.app/post/ru-he-geng-shu-gua-shi-yong-shang-jia-yi-pao-lu-de-kou-dai-yue/</id>
-        <link href="https://1inn.vercel.app/post/ru-he-geng-shu-gua-shi-yong-shang-jia-yi-pao-lu-de-kou-dai-yue/">
+        <id>https://www.1inn.top/post/ru-he-geng-shu-gua-shi-yong-shang-jia-yi-pao-lu-de-kou-dai-yue/</id>
+        <link href="https://www.1inn.top/post/ru-he-geng-shu-gua-shi-yong-shang-jia-yi-pao-lu-de-kou-dai-yue/">
         </link>
         <updated>2021-08-17T06:37:26.000Z</updated>
         <summary type="html"><![CDATA[<p>本文不教小白，只是给动手能力强的人一个思路。虽然口袋阅商家已经跑路，店铺早已关门，但设备还是能继续用的。</p>
@@ -56,8 +75,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Epicgames 第三方客户端 Legendary 安装教程]]></title>
-        <id>https://1inn.vercel.app/post/epicgames-di-san-fang-ke-hu-duan-legendary-an-zhuang-jiao-cheng/</id>
-        <link href="https://1inn.vercel.app/post/epicgames-di-san-fang-ke-hu-duan-legendary-an-zhuang-jiao-cheng/">
+        <id>https://www.1inn.top/post/epicgames-di-san-fang-ke-hu-duan-legendary-an-zhuang-jiao-cheng/</id>
+        <link href="https://www.1inn.top/post/epicgames-di-san-fang-ke-hu-duan-legendary-an-zhuang-jiao-cheng/">
         </link>
         <updated>2021-07-28T02:33:47.000Z</updated>
         <summary type="html"><![CDATA[<ul>
@@ -115,8 +134,8 @@ egl_sync = true
     </entry>
     <entry>
         <title type="html"><![CDATA[中国李华]]></title>
-        <id>https://1inn.vercel.app/post/zhong-guo-li-hua/</id>
-        <link href="https://1inn.vercel.app/post/zhong-guo-li-hua/">
+        <id>https://www.1inn.top/post/zhong-guo-li-hua/</id>
+        <link href="https://www.1inn.top/post/zhong-guo-li-hua/">
         </link>
         <updated>2021-05-08T11:36:48.000Z</updated>
         <summary type="html"><![CDATA[<p>记一次定制衣物。效果见封面</p>
@@ -129,8 +148,8 @@ egl_sync = true
     </entry>
     <entry>
         <title type="html"><![CDATA[故乡并不遥远，乡音带你回家]]></title>
-        <id>https://1inn.vercel.app/post/gu-xiang-bing-bu-yao-yuan-xiang-yin-dai-ni-hui-jia/</id>
-        <link href="https://1inn.vercel.app/post/gu-xiang-bing-bu-yao-yuan-xiang-yin-dai-ni-hui-jia/">
+        <id>https://www.1inn.top/post/gu-xiang-bing-bu-yao-yuan-xiang-yin-dai-ni-hui-jia/</id>
+        <link href="https://www.1inn.top/post/gu-xiang-bing-bu-yao-yuan-xiang-yin-dai-ni-hui-jia/">
         </link>
         <updated>2021-05-07T13:01:55.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -150,8 +169,8 @@ egl_sync = true
     </entry>
     <entry>
         <title type="html"><![CDATA[Excel 表格相关问题与全境封锁机密套装统计]]></title>
-        <id>https://1inn.vercel.app/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/</id>
-        <link href="https://1inn.vercel.app/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/">
+        <id>https://www.1inn.top/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/</id>
+        <link href="https://www.1inn.top/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/">
         </link>
         <updated>2021-03-14T06:03:09.000Z</updated>
         <summary type="html"><![CDATA[<p>眼花缭乱预警，关于什么是全境1，请谷歌或哔哩哔哩搜索。</p>
@@ -258,8 +277,8 @@ Markdown 表格的确不适合做表格统计，太复杂就会变成下面这�
     </entry>
     <entry>
         <title type="html"><![CDATA[小便条：关于网站提速那些事以及其他无关]]></title>
-        <id>https://1inn.vercel.app/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/</id>
-        <link href="https://1inn.vercel.app/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/">
+        <id>https://www.1inn.top/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/</id>
+        <link href="https://www.1inn.top/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/">
         </link>
         <updated>2021-02-03T13:23:08.000Z</updated>
         <summary type="html"><![CDATA[<p>因为绞尽脑汁感觉已经没有什么可以写的了，所以只好列一些清单来给想提速的人一点启发，所以看起来肯定不像教程文章。</p>
@@ -287,8 +306,8 @@ Markdown 表格的确不适合做表格统计，太复杂就会变成下面这�
     </entry>
     <entry>
         <title type="html"><![CDATA[头像、昵称与标志的更换历史]]></title>
-        <id>https://1inn.vercel.app/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/</id>
-        <link href="https://1inn.vercel.app/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/">
+        <id>https://www.1inn.top/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/</id>
+        <link href="https://www.1inn.top/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/">
         </link>
         <updated>2021-01-11T05:43:54.000Z</updated>
         <summary type="html"><![CDATA[<p>很久很久之前，我都不知道自己会在博客路上走这么远。<br>
@@ -325,8 +344,8 @@ Markdown 表格的确不适合做表格统计，太复杂就会变成下面这�
     </entry>
     <entry>
         <title type="html"><![CDATA[改造“B 言 B 语”并直接移植到网页端]]></title>
-        <id>https://1inn.vercel.app/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/</id>
-        <link href="https://1inn.vercel.app/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/">
+        <id>https://www.1inn.top/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/</id>
+        <link href="https://www.1inn.top/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/">
         </link>
         <updated>2021-01-09T09:34:35.000Z</updated>
         <summary type="html"><![CDATA[<p>这是一个毫无技术含量的移植（= =）<br>
@@ -374,8 +393,8 @@ Markdown 表格的确不适合做表格统计，太复杂就会变成下面这�
     </entry>
     <entry>
         <title type="html"><![CDATA[我为什么使用 TiddlyWiki]]></title>
-        <id>https://1inn.vercel.app/post/wo-wei-shi-me-shi-yong-tiddlywiki/</id>
-        <link href="https://1inn.vercel.app/post/wo-wei-shi-me-shi-yong-tiddlywiki/">
+        <id>https://www.1inn.top/post/wo-wei-shi-me-shi-yong-tiddlywiki/</id>
+        <link href="https://www.1inn.top/post/wo-wei-shi-me-shi-yong-tiddlywiki/">
         </link>
         <updated>2021-01-01T06:09:02.000Z</updated>
         <summary type="html"><![CDATA[<p>TiddlyWiki[^1]，内容翻译很全，几乎照搬官方网站] 作为我曾经浏览过的收集知识的工具（不像很多人把它当作学习笔记，比如 RoamResearch[<sup>2]）。并不能称为我的知识管理系统。老实说我所做的事没有那么高级，所以不会在文章提及一些高级技巧（如卡片盒笔记法[</sup>3]），在这篇文章里我只写一件事情——关于我选择 TiddlyWiki 以及收集知识这一块的思考。</p>
@@ -415,32 +434,6 @@ Markdown 表格的确不适合做表格统计，太复杂就会变成下面这�
 </li>
 </ol>
 </section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[因安全问题评论系统迁移至 Waline]]></title>
-        <id>https://1inn.vercel.app/post/an-quan-wen-ti-ping-lun-xi-tong-qian-yi-zhi-waline/</id>
-        <link href="https://1inn.vercel.app/post/an-quan-wen-ti-ping-lun-xi-tong-qian-yi-zhi-waline/">
-        </link>
-        <updated>2020-12-17T04:43:24.000Z</updated>
-        <summary type="html"><![CDATA[<p>没错，只多一个<code>V</code>的评论系统 Waline，你会发现除了评论框下的 V 变成了 W，以及版本号变了外，其他几乎没变，当然，除了更加安全</p>
-<blockquote>
-<p>双倍 V，更加安全</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<p>没错，只多一个<code>V</code>的评论系统 Waline，你会发现除了评论框下的 V 变成了 W，以及版本号变了外，其他几乎没变，当然，除了更加安全</p>
-<blockquote>
-<p>双倍 V，更加安全</p>
-</blockquote>
-<!-- more -->
-<p>我是一直都不知道 valine 有根本上的安全问题的，直到我看到 waline ，一款从 Valine 衍生的带后端评论系统 。他在<a href="https://waline.js.org/why">这个页面</a>里列出了 Valine 的几个问题</p>
-<ul>
-<li>XSS 安全</li>
-<li>隐私泄露</li>
-<li>阅读统计篡改</li>
-</ul>
-<p>附带一篇文章，<a href="https://ttys3.net/post/hugo/please-stop-using-valine-js-comment-system-until-it-fixed-the-privacy-leaking-problem/">《请马上停止使用Valine.js评论系统，除非它修复了用户隐私泄露问题》</a>。我仔细阅读了文章，由此决定立即迁移。按照 Waline 文档的 <strong>Valine 迁移指南</strong> 部分迁移成功，同时再按照 <code>配置&gt;服务端&gt;评论通知</code> 在 Vercel 增加了相关变量，至此迁移成功！<br>
-同时更改发件邮箱，看能不能避免被纳入垃圾邮件的问题，这个项目也是刚刚启动中，所以评论后是全局刷新，后续应该会有 ajax</p>
 ]]></content>
     </entry>
 </feed>
